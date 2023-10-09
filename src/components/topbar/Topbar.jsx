@@ -1,11 +1,13 @@
 import "./topbar.css";
+
+// * Material Icons
 import {
   TagRounded,
   SearchRounded,
-  HomeTwoTone,
-  ViewTimelineTwoTone,
-  MessageTwoTone,
-  NotificationsTwoTone,
+  HomeRounded,
+  ViewTimelineRounded,
+  MessageRounded,
+  NotificationsRounded,
   PersonRounded,
 } from "@mui/icons-material";
 
@@ -35,26 +37,26 @@ export default function Topbar() {
         <div className="topbarIcons">
           <div className="tbrIcon">
             <abbr title="Home">
-              <HomeTwoTone className="icon" />
+              <HomeRounded className="icon" />
             </abbr>
           </div>
 
           <div className="tbrIcon">
             <abbr title="Timeline">
-              <ViewTimelineTwoTone className="icon" />
+              <ViewTimelineRounded className="icon" />
             </abbr>
           </div>
 
           <div className="tbrIcon">
-            <abbr title="Message">
-              <MessageTwoTone className="icon" />
+            <abbr title="Chats">
+              <MessageRounded className="icon" />
               <span className="badge">99+</span>
             </abbr>
           </div>
 
           <div className="tbrIcon">
-            <abbr title="Notification">
-              <NotificationsTwoTone className="icon" />
+            <abbr title="Notifications">
+              <NotificationsRounded className="icon" />
               <span className="badge">99+</span>
             </abbr>
           </div>
@@ -62,7 +64,7 @@ export default function Topbar() {
           <div className="tbrIcon">
             <abbr title="Profile">
               {true ? (
-                <img src="/assets/person1.jpg" alt="" />
+                <img src="/assets/person/person1.jpg" alt="User" />
               ) : (
                 <PersonRounded className="icon" />
               )}

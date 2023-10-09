@@ -1,0 +1,30 @@
+.eachFriend {
+  width: 100%;
+  /* background-color: darkgoldenrod; */
+  padding: 5px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.eachFriend:hover {
+  background-color: rgba(0, 108, 151, 0.15);
+}
+
+.friendImage {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.friendName {
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: #333;
+}

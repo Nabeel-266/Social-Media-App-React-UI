@@ -1,0 +1,194 @@
+.modalOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.postModal {
+  width: 600px;
+  padding: 12px 20px;
+  background-color: rgba(246, 246, 246, 0.9);
+  border-radius: 6px;
+}
+
+.modalHeader {
+  padding: 0px 0px 8px 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #444;
+}
+
+.modalHeader h2 {
+  color: #333;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.modalHeader .closeModalBtn {
+  all: unset;
+  padding: 3px;
+  position: absolute;
+  right: 5px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #444;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+.closeIcon {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.modalMiddle {
+  display: flex;
+  flex-direction: column;
+}
+
+.postUser {
+  padding: 10px 0px;
+  display: flex;
+  gap: 8px;
+}
+
+.postUserImage {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 2px solid #444;
+}
+
+.postUserName {
+  width: calc(100% - 53px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0px;
+}
+
+.postUserName h6 {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.postUserName span {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.postTextArea {
+  width: 100%;
+}
+
+.postTextArea .textArea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 150px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.7rem;
+  font-weight: 600;
+  overflow: auto;
+  color: #444;
+}
+
+.textArea::-webkit-scrollbar {
+  width: 6px;
+}
+
+.textArea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.textArea::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+}
+
+.postAddEmoji {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.postAddEmoji .emoji {
+  font-size: 2.6rem;
+  border-radius: 100%;
+  color: #333;
+  cursor: pointer;
+}
+
+.postAddMedia {
+  padding: 4px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #444;
+  border-radius: 4px;
+}
+
+.postAddMedia h6 {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.mediaOptions {
+  display: flex;
+  gap: 10px;
+  margin-top: 3px;
+}
+
+.mediaIcon {
+  padding: 6px;
+  font-size: 3.4rem;
+  color: #fff;
+  background-color: #444;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.modalFooter {
+  padding: 8px 0px;
+  margin-top: 10px;
+}
+
+.postBtn {
+  all: unset;
+  width: 100%;
+  padding: 6px 0px;
+  border: none;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  /* background-color: rgba(0, 108, 151, 0.8); */
+  background-color: #888;
+  border-radius: 4px;
+  cursor: not-allowed;
+  transition: 0.3s ease-in-out;
+}
+
+.postBtn:hover {
+  background-color: rgba(0, 108, 151, 0.7);
+}
