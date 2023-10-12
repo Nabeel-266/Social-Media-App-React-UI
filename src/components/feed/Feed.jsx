@@ -6,7 +6,7 @@ import { allPosts } from "../../dummydata";
 
 export default function Feed() {
   return (
-    <div className="feedArea">
+    <section className="feedArea">
       <div className="feedWrapper">
         <PostingBox />
         <div className="allPosts">
@@ -16,6 +16,6 @@ export default function Feed() {
         </div>
         {/* <PostingModal /> */}
       </div>
-    </div>
+    </section>
   );
 }

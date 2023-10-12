@@ -1,0 +1,68 @@
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+
+.subContainer {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 15px 15px 30px #bbb;
+  /* overflow: hidden; */
+}
+
+.subContLeft {
+  width: 45%;
+  display: flex;
+  background-image: url("../../../public/assets/auth-Bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subContLeftWrapper {
+  width: 100%;
+  height: 100%;
+  padding: 28% 25px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #e6e6e6;
+  background-color: rgba(30, 30, 30, 0.2);
+  backdrop-filter: blur(40px);
+}
+
+.subContLeft h5 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.subContLeft h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 3.8rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.subContLeft p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.subContRight {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}

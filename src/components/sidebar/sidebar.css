@@ -1,5 +1,5 @@
 .sidebar {
-  flex: 3.2;
+  flex: 3;
   height: calc(100vh - 8vh);
   overflow-y: scroll;
   position: sticky;
@@ -54,7 +54,7 @@
 }
 
 .navigatorItem:hover {
-  background-color: rgba(0, 108, 151, 0.15);
+  background-color: rgba(0, 65, 90, 0.15);
 }
 
 .navigatorIcon {
@@ -86,7 +86,11 @@
 }
 
 .seeNavigatorsBtn:hover {
-  background-color: rgba(0, 108, 151, 0.15);
+  background-color: rgba(0, 65, 90, 0.15);
+}
+
+.seeNavigatorsBtn:hover .btnIcon {
+  background-color: #eee;
 }
 
 .seeNavigatorsBtn .btnIcon {
@@ -96,8 +100,8 @@
   border-radius: 100%;
 }
 
-/** For Sidebar Friends */
-.sidebarFriends {
+/** For Sidebar Followers */
+.sidebarFollowers {
   width: 100%;
   padding: 15px 0px;
   border-top: 1px solid #aaa;
@@ -106,7 +110,7 @@
   gap: 10px;
 }
 
-.sidebarFriendHdr {
+.sidebarFollowerHdr {
   padding: 0px 10px;
   display: flex;
   justify-content: space-between;
@@ -114,18 +118,19 @@
   color: #333;
 }
 
-.sidebarFriendHdr h2 {
-  font-size: 2.2rem;
+.sidebarFollowerHdr h2 {
+  font-size: 2rem;
   font-weight: bold;
+  letter-spacing: -0.5px;
 }
 
-.sidebarFriendHdr span {
+.sidebarFollowerHdr span {
   font-size: 1.8rem;
   font-weight: bold;
   margin-top: 2px;
 }
 
-.friendsList {
+.followersList {
   width: 100%;
   padding: 5px 0px;
   list-style: none;

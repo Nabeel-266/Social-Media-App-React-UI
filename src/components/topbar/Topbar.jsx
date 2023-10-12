@@ -13,7 +13,7 @@ import {
 
 export default function Topbar() {
   return (
-    <div className="topbar">
+    <header className="topbar">
       <div className="topbarLeft">
         <TagRounded className="logoIcon" />
         <span className="logoText">SocialVibes</span>
@@ -34,34 +34,34 @@ export default function Topbar() {
       </div>
 
       <div className="topbarRight">
-        <div className="topbarIcons">
-          <div className="tbrIcon">
+        <nav className="topbarNavigationIcons">
+          <div className="navIcon">
             <abbr title="Home">
               <HomeRounded className="icon" />
             </abbr>
           </div>
 
-          <div className="tbrIcon">
+          <div className="navIcon">
             <abbr title="Timeline">
               <ViewTimelineRounded className="icon" />
             </abbr>
           </div>
 
-          <div className="tbrIcon">
+          <div className="navIcon">
             <abbr title="Chats">
               <MessageRounded className="icon" />
               <span className="badge">99+</span>
             </abbr>
           </div>
 
-          <div className="tbrIcon">
+          <div className="navIcon">
             <abbr title="Notifications">
               <NotificationsRounded className="icon" />
               <span className="badge">99+</span>
             </abbr>
           </div>
 
-          <div className="tbrIcon">
+          <div className="navIcon">
             <abbr title="Profile">
               {true ? (
                 <img src="/assets/person/person1.jpg" alt="User" />
@@ -70,8 +70,8 @@ export default function Topbar() {
               )}
             </abbr>
           </div>
-        </div>
+        </nav>
       </div>
-    </div>
+    </header>
   );
 }

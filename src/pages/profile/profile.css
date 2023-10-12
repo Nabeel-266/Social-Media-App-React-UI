@@ -1,0 +1,21 @@
+.mainContainer {
+  width: 100%;
+  position: relative;
+}
+
+.subContainer {
+  width: 100%;
+  display: flex;
+  background-color: #eee;
+}
+
+.profileContainer {
+  flex: 8.8;
+  display: flex;
+  flex-direction: column;
+}
+
+.profileBottom {
+  display: flex;
+  padding: 0px 10px 0px 0px;
+}

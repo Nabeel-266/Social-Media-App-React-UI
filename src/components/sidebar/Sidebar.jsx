@@ -1,6 +1,6 @@
 import "./sidebar.css";
 import { allUsers } from "../../dummydata";
-import Friend from "../friend/Friend";
+import Follower from "../follower/Follower";
 
 // * Material Icons
 import {
@@ -18,9 +18,9 @@ import {
 
 export default function Sidebar() {
   return (
-    <div className="sidebar">
+    <section className="sidebar">
       <div className="sidebarWrapper">
-        <section className="sidebarNavigators">
+        <nav className="sidebarNavigators">
           <ul className="navigatorsList">
             <li className="navigatorItem">
               <DynamicFeedRounded className="navigatorIcon" />
@@ -68,20 +68,20 @@ export default function Sidebar() {
             {/* <KeyboardArrowUpRounded className="btnIcon" /> */}
             See More
           </button>
-        </section>
+        </nav>
 
-        <section className="sidebarFriends">
-          <header className="sidebarFriendHdr">
-            <h2>Friends</h2>
+        <section className="sidebarFollowers">
+          <header className="sidebarFollowerHdr">
+            <h2>Followers</h2>
             <span>{allUsers.length - 1}</span>
           </header>
-          <ul className="friendsList">
+          <ul className="followersList">
             {allUsers.map((user) => {
-              return <Friend key={user.id} user={user} />;
+              return <Follower key={user.id} user={user} />;
             })}
           </ul>
         </section>
       </div>
-    </div>
+    </section>
   );
 }

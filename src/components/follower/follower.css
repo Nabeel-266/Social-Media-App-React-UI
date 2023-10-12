@@ -1,6 +1,5 @@
-.eachFriend {
+.eachFollower {
   width: 100%;
-  /* background-color: darkgoldenrod; */
   padding: 5px 10px;
   display: flex;
   justify-content: flex-start;
@@ -12,18 +11,18 @@
   transition: 0.3s;
 }
 
-.eachFriend:hover {
-  background-color: rgba(0, 108, 151, 0.15);
+.eachFollower:hover {
+  background-color: rgba(0, 65, 90, 0.15);
 }
 
-.friendImage {
+.followerImage {
   width: 35px;
   height: 35px;
   object-fit: cover;
   border-radius: 100%;
 }
 
-.friendName {
+.followerName {
   font-size: 1.65rem;
   font-weight: 600;
   color: #333;

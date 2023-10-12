@@ -1,5 +1,5 @@
 .rightbar {
-  flex: 3.2;
+  flex: 3;
   height: calc(100vh - 8vh);
   overflow-y: scroll;
   position: sticky;

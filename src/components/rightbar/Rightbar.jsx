@@ -4,7 +4,7 @@ import Online from "../online/Online";
 
 export default function Rightbar() {
   return (
-    <div className="rightbar">
+    <aside className="rightbar">
       <div className="rightbarWrapper">
         <section className="advertisementCont">
           <img
@@ -39,11 +39,11 @@ export default function Rightbar() {
 
           <ul className="onlineFriendList">
             {allUsers.map((user) => {
-              return <Online key={user.id} user={user}/>
+              return <Online key={user.id} user={user} />;
             })}
           </ul>
         </section>
       </div>
-    </div>
+    </aside>
   );
 }
